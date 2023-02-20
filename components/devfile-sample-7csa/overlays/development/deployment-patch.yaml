@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-7csa
+  namespace: jduimovich-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:005aa05e28f8ca47428688c96b4cde00d6d4627cbd680bddc252bdeef2c0bb55
+        name: my-nodejs
+        resources: {}
+status: {}
