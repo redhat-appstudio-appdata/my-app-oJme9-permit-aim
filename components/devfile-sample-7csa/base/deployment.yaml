@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-7csa
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:oJme9-devfile-sample-7csa
+      - image: quay.io/redhat-appstudio/user-workload@sha256:005aa05e28f8ca47428688c96b4cde00d6d4627cbd680bddc252bdeef2c0bb55
         name: my-nodejs
         ports:
         - containerPort: 3001
